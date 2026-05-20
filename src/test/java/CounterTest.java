@@ -1,7 +1,5 @@
-package src.test.java;
 
-import static org.junit.Assert.*;
-import src.main.java.*;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class CounterTest {
@@ -33,7 +31,7 @@ public class CounterTest {
 	public void testDecrement() {
 		Counter testCounter = new Counter();
 		
-		for(int i = 1; i <10; i++) {
+		for(int i = 1; i <10; i--) {
 			testCounter.decrement();
 			assertEquals(testCounter.getCount(), i * -1);
 		}
