@@ -2,6 +2,7 @@
 public class Counter {
 
 	private int count;
+	private String unusedVariable = "ga dipakai";
 	
 	public Counter() {
 		this.reset();
@@ -22,5 +23,9 @@ public class Counter {
 	public int getCount() {
 		return count;
 	}
+
+	public String countString(String prefix) {
+		return prefix.toUpperCase() + count;
+	}	
 	
 }
